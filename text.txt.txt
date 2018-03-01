@@ -1,0 +1,94 @@
+<html>
+        <head>
+              <title>
+			  
+			   Bio Data
+			  
+			  </title>
+    
+        </head>
+       
+	 
+
+<body>
+
+
+         <form>
+                Your Name: <input type="text" width="130px" id="name"><br /><br />
+				<input type="button" value="check details" onclick="valuecheck();">
+
+		</form>
+
+<script>
+
+function valuecheck (){
+
+var textname = document.getElementById("name").value;
+
+       
+  function biodata (name,age,height,weight) {
+	   
+	   this.name = name;
+	   this.age = age;
+	   this.height = height;
+	   this.weight = weight;
+	   
+	   }
+	   var first = new biodata("gaurav","22","6","65");
+	   var sec = new biodata("sarthak","26","5.9","70");
+	   var third = new biodata("rahul","20","6","60");
+	   
+	   if ( textname == "gaurav" ){
+	   var gaurav = first;
+	   document.write("<h3>" +gaurav.name+ "</h3>"+"<br />");
+	   document.write("age: "+" "+gaurav.age+ "<br />");
+	   document.write("height: "+" "+gaurav.height+ "<br />");
+	   document.write("weight: "+" "+gaurav.weight);
+	   
+	   
+	   }
+	   
+	   else if ( textname == "sarthak")
+	   
+	   {
+	      var sarthak = sec;
+	   document.write("<h3>" +sarthak.name+ "</h3>"+"<br />");
+	   document.write("age:"+" "+sarthak.age+ "<br />");
+	   document.write("height:"+" "+sarthak.height+ "<br />");
+	   document.write("weight:"+" "+sarthak.weight);
+	   }
+	   
+	   else if ( textname == "rahul")
+	   
+	   {
+	     var rahul = third;
+	   document.write("<h3>" +rahul.name+ "</h3>"+"<br />");
+	   document.write("age:"+" "+rahul.age+ "<br />");
+	   document.write("height:"+" "+rahul.height+ "<br />");
+	   document.write("weight:"+" "+rahul.weight);
+	   }
+	   
+	   else {
+	   
+	   document.write("This is not in the database");
+	   }
+	   
+	   
+	   }
+	   </script>
+
+</script>
+
+
+</body>
+
+
+ 
+	   
+	   
+	   
+	   
+	   
+
+
+</html>
