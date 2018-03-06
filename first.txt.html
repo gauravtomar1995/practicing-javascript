@@ -1,0 +1,34 @@
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+      <div id = "box">
+                <form>
+                <div class = "box1"><label>Name</label><input type = "text" id = "firstname"> </div> <br />
+                <div class = "box1"><label>Email</label><input type = "text"></div>
+                
+                </form> 
+           </div>
+      
+       <div id = "maindiv"><input type = "button" value = "submit" onclick = "namedisplay()"></div>
+
+       <script type = "text/javascript">
+       
+                  function namedisplay(){
+                       var name1 = document.getElementById("firstname").value;
+                
+				       document.write("Thank You" +" "+ name1+" " + "for submitting the information");
+                  
+                     }       
+       </script>
+</body>
+
+
+
+
+</html>
+
